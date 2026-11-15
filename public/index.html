@@ -3,20 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Optimized Website</title>
+  <meta name="description" content="Explore a simple photo gallery featuring beautiful mountain, forest, and sea views.">
+  <meta name="keywords" content="photo gallery, nature photos, mountains, forest, sea">
+  <meta name="author" content="Web Development Practical">
+  <title>Nature Photo Gallery | Optimized Website</title>
   <link rel="stylesheet" href="/css/style.min.css">
 </head>
 <body>
-  <h1>Photo Gallery</h1>
-  <p>Scroll down. Images load only when you reach them.</p>
+  <header>
+    <h1>Nature Photo Gallery</h1>
+    <p>Explore beautiful views of nature. Images load as you scroll down.</p>
+  </header>
 
-  <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80" alt="Mountain landscape" loading="lazy" width="600" height="400">
-  <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=600&q=80" alt="Green forest" loading="lazy" width="600" height="400">
-  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Sunset over the sea" loading="lazy" width="600" height="400">
-  <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=600&q=80" alt="Mountain valley" loading="lazy" width="600" height="400">
+  <main>
+    <section aria-labelledby="gallery-heading">
+      <h2 id="gallery-heading">Our Photo Gallery</h2>
 
-  <button id="btn">Click me</button>
-  <p id="msg"></p>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80" alt="Wide view of a mountain landscape" loading="lazy" width="600" height="400">
+        <figcaption>Beautiful mountain landscape</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=600&q=80" alt="Tall green trees in a dense forest" loading="lazy" width="600" height="400">
+        <figcaption>Peaceful green forest</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Blue sea with waves near a sandy beach" loading="lazy" width="600" height="400">
+        <figcaption>Blue sea and sandy beach</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=600&q=80" alt="Natural valley surrounded by mountains and trees" loading="lazy" width="600" height="400">
+        <figcaption>Green mountain valley</figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="test-heading">
+      <h2 id="test-heading">Test the Button</h2>
+      <button id="btn" type="button">Click me</button>
+      <p id="msg" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Nature Photo Gallery - Web Development Practical</p>
+  </footer>
 
   <script src="/js/script.min.js" defer></script>
 </body>
