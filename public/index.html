@@ -4,27 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Optimized Website</title>
-
-  <!-- MINIFIED CSS (style.min.css is the small version of style.css) -->
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="/css/style.min.css">
 </head>
 <body>
   <h1>Photo Gallery</h1>
   <p>Scroll down. Images load only when you reach them.</p>
 
-  <!-- LAZY LOADING: loading="lazy" tells the browser to load the image later.
-       width and height stop the page from jumping while loading. -->
-<img
-  src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600"
-  alt="Forest"
-  width="600"
-  loading="lazy"
->
+  <img src="/images/image1.svg" alt="Mountain landscape" loading="lazy" width="600" height="400">
+  <img src="/images/image2.svg" alt="Green forest" loading="lazy" width="600" height="400">
+  <img src="/images/image3.svg" alt="Sunset over the sea" loading="lazy" width="600" height="400">
+  <img src="/images/image4.svg" alt="Mountain valley" loading="lazy" width="600" height="400">
 
   <button id="btn">Click me</button>
   <p id="msg"></p>
 
-  <!-- MINIFIED JS; defer lets the page load first -->
-  <script src="js/script.min.js" defer></script>
+  <script src="/js/script.min.js" defer></script>
 </body>
 </html>
