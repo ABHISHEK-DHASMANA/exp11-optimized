@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Optimized Website</title>
+
+  <!-- MINIFIED CSS (style.min.css is the small version of style.css) -->
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <h1>Photo Gallery</h1>
+  <p>Scroll down. Images load only when you reach them.</p>
+
+  <!-- LAZY LOADING: loading="lazy" tells the browser to load the image later.
+       width and height stop the page from jumping while loading. -->
+  <img src="https://picsum.photos/600/400?1" alt="Photo 1" loading="lazy" width="600" height="400">
+  <img src="https://picsum.photos/600/400?2" alt="Photo 2" loading="lazy" width="600" height="400">
+  <img src="https://picsum.photos/600/400?3" alt="Photo 3" loading="lazy" width="600" height="400">
+  <img src="https://picsum.photos/600/400?4" alt="Photo 4" loading="lazy" width="600" height="400">
+
+  <button id="btn">Click me</button>
+  <p id="msg"></p>
+
+  <!-- MINIFIED JS; defer lets the page load first -->
+  <script src="js/script.min.js" defer></script>
+</body>
+</html>
